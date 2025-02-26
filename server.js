@@ -14,7 +14,7 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors({ origin: "http://localhost:3000", credentials: true })); // Adjust frontend URL if needed
+app.use(cors({ origin: "https://bike-estore.vercel.app", credentials: true })); // Adjust frontend URL if needed
 
 // Connect to MongoDB
 connectDB();
