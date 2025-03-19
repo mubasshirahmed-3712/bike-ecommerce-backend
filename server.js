@@ -14,12 +14,13 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors({ origin: "https://bike-estore.vercel.app", credentials: true })); // Adjust frontend URL if needed
+
+app.use(cors({ origin: "https://bike-estore.vercel.app" || "http://localhost:3000", credentials: true })); // Adjust frontend URL if needed
 
 // Connect to MongoDB
 connectDB();
 
-// Serve static images from the "public/images" folder
+// Serve static images from the "publc/images" folder
 app.use("/images", express.static(path.join(__dirname, "public/images")));
 
 // API Routes
