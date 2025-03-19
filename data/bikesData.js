@@ -1,13 +1,19 @@
 const bikes = [
   {
     name: "Harley Davidson",
+    brand: "Harley Davidson",
+    category: "Cruiser",
+    engineCapacity: 1800,
     description: "A powerful bike for long rides.",
-    image: "/images/bike1.jpg", // Image stored in backend /public/images
+    image: "/images/bike1.jpg",
     price: 15000,
     quantity: 4,
   },
   {
     name: "Ducati Panigale V2",
+    brand: "Ducati",
+    category: "Sport",
+    engineCapacity: 955,
     description: "A sleek and fast superbike.",
     image: "/images/bike2.jpg",
     price: 17000,
@@ -15,6 +21,9 @@ const bikes = [
   },
   {
     name: "Kawasaki Ninja ZX-10R",
+    brand: "Kawasaki",
+    category: "Sport",
+    engineCapacity: 998,
     description: "Built for speed and agility.",
     image: "/images/bike3.jpeg",
     price: 16000,
@@ -22,6 +31,9 @@ const bikes = [
   },
   {
     name: "BMW S1000RR",
+    brand: "BMW",
+    category: "Sport",
+    engineCapacity: 999,
     description: "The ultimate racing machine.",
     image: "/images/bike4.jpg",
     price: 18000,
@@ -29,6 +41,9 @@ const bikes = [
   },
   {
     name: "Yamaha YZF-R1",
+    brand: "Yamaha",
+    category: "Sport",
+    engineCapacity: 998,
     description: "An iconic superbike with unmatched performance.",
     image: "/images/bike5.jpg",
     price: 15500,
@@ -36,6 +51,9 @@ const bikes = [
   },
   {
     name: "Honda CBR1000RR",
+    brand: "Honda",
+    category: "Sport",
+    engineCapacity: 1000,
     description: "A legendary bike with advanced features.",
     image: "/images/bike6.jpg",
     price: 14500,
@@ -43,6 +61,9 @@ const bikes = [
   },
   {
     name: "Suzuki GSX-R1000",
+    brand: "Suzuki",
+    category: "Sport",
+    engineCapacity: 999,
     description: "For the true sports bike enthusiast.",
     image: "/images/bike7.jpg",
     price: 15000,
@@ -50,6 +71,9 @@ const bikes = [
   },
   {
     name: "KTM RC 390",
+    brand: "KTM",
+    category: "Sport",
+    engineCapacity: 373,
     description: "A street-smart performance bike.",
     image: "/images/bike8.jpg",
     price: 10000,
@@ -57,6 +81,9 @@ const bikes = [
   },
   {
     name: "Triumph Daytona 675",
+    brand: "Triumph",
+    category: "Sport",
+    engineCapacity: 675,
     description: "The superbike for those who demand power.",
     image: "/images/bike9.jpg",
     price: 16500,
@@ -64,6 +91,9 @@ const bikes = [
   },
   {
     name: "Aprilia RSV4",
+    brand: "Aprilia",
+    category: "Sport",
+    engineCapacity: 1100,
     description: "A combination of style and high performance.",
     image: "/images/bike10.jpg",
     price: 19000,
@@ -71,6 +101,9 @@ const bikes = [
   },
   {
     name: "MV Agusta F4",
+    brand: "MV Agusta",
+    category: "Sport",
+    engineCapacity: 998,
     description: "A stunning Italian superbike.",
     image: "/images/bike11.jpg",
     price: 20000,
@@ -78,6 +111,9 @@ const bikes = [
   },
   {
     name: "Zontes 310R",
+    brand: "Zontes",
+    category: "Naked",
+    engineCapacity: 312,
     description: "A perfect entry-level sportbike.",
     image: "/images/bike12.jpg",
     price: 8000,
@@ -85,6 +121,9 @@ const bikes = [
   },
   {
     name: "Benelli 302R",
+    brand: "Benelli",
+    category: "Sport",
+    engineCapacity: 300,
     description: "A well-rounded and stylish bike.",
     image: "/images/bike13.jpg",
     price: 9500,
@@ -92,6 +131,9 @@ const bikes = [
   },
   {
     name: "Kawasaki Z1000",
+    brand: "Kawasaki",
+    category: "Naked",
+    engineCapacity: 1043,
     description: "The naked bike for adrenaline lovers.",
     image: "/images/bike14.jpg",
     price: 12500,
@@ -99,6 +141,9 @@ const bikes = [
   },
   {
     name: "Continental GT650",
+    brand: "Royal Enfield",
+    category: "Cafe Racer",
+    engineCapacity: 648,
     description: "A naked streetfighter with aggressive styling.",
     image: "/images/bike15.jpeg",
     price: 13850,
