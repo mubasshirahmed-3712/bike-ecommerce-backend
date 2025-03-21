@@ -8,15 +8,11 @@ const orderSchema = new mongoose.Schema(
         name: { type: String, required: true },
         quantity: { type: Number, required: true },
         price: { type: Number, required: true },
-        image: { type: String, required: true }, // ✅ Added image field
+        image: { type: String, required: true },
+        
       },
     ],
     totalPrice: { type: Number, required: true },
-    shippingDetails: {
-      name: { type: String, required: true },
-      email: { type: String, required: true },
-      address: { type: String, required: true },
-    },
   },
   { timestamps: true }
 );
