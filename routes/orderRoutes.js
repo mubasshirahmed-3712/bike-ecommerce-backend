@@ -14,6 +14,13 @@ router.post("/place", protect, async (req, res) => {
       return res.status(400).json({ message: "No items in the order." });
     }
 
+     // ✅ Ensure each item includes an image URL
+     const formattedCart = cart.map((item) => ({
+      name: item.name,
+      quantity: item.quantity,
+      price: item.price,
+      image: item.image || "/images/default-bike.jpg", // ✅ Default image if missing
+    }));
     // ✅ Save order in database
     const newOrder = new Order({
       user: userId,
