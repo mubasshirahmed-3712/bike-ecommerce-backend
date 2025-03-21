@@ -14,7 +14,6 @@ router.post("/place", protect, async (req, res) => {
       return res.status(400).json({ message: "No items in the order." });
     }
 
-    
     // ✅ Save order in database
     const newOrder = new Order({
       user: userId,
